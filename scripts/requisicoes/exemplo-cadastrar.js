@@ -11,8 +11,8 @@ function salvar(e) {
     e.preventDefault(); // Impede o envio do formulário
 
     let campoNome = document.getElementById("campoNome");
-    let nome = campoNome.value.trim(); // Remove espaços extras
-    let cnpj = campoCnpj.value.trim(); // Remove espaços extras
+    let nome = campoNome.value; // Remove espaços extras
+    let cnpj = campoCnpj.value; // Remove espaços extras
 
     // Validação do nome
     if (nome.length < 3) {
